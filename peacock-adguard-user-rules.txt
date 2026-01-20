@@ -19,7 +19,6 @@
 ||time.akamai.com^$important
 ||video-ads-module.ad-tech.nbcuni.com^$important
 ||identity.mparticle.com^$important
-||config.clients.peacocktv.com^$important
 ||nbcstreaming.hb-api.omtrdc.net^$important
 ||s.adex2.fwmrm.net^$important
 ||adex2.fwmrm.net^$important
