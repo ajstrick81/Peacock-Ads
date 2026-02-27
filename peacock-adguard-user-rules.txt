@@ -37,6 +37,7 @@
 ||sb.scorecardresearch.com^$important
 ||nbcstreaming.sc.omtrdc.net^$important
 ||sas.peacocktv.com^$important
+/[a-z0-9]{14}.cloudfront.net/
 
 ! === ALLOWLISTS (preserve live / session continuity) ===
 ! Allow Adobe DTM loader (required for some TV clients' runtime bootstrap)
