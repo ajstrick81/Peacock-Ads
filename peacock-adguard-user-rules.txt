@@ -7,7 +7,7 @@
 # Anchored regex — matches hosts like g002-vod-us-cmaf-prd-ak.cdn.peacocktv.com
 # Credit to Reddit user: lurking-in-the-bg for updating the rules
 /^(g\d{3})-(vod|sle)-us-cmaf-prd-(cf|cc|sf|ph|dc|at|fy)\.cdn\.peacocktv\.com$/
-/^g\d{3}-vod-us-cmaf-prd-ak-a(*]\d{2}\.cdn\.peacocktv\.com$/
+/^g\d{3}-vod-us-cmaf-prd-ak-[a-z]\d+\.cdn\.peacocktv\.com$
 
 ! === SECONDARY BLOCK ===
 ! Block NETSKRT ad-segment CDN (most variants)
