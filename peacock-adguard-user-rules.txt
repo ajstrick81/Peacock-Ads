@@ -32,7 +32,6 @@
 ||sb.scorecardresearch.com^$important
 ||nbcstreaming.sc.omtrdc.net^$important
 ||sas.peacocktv.com^$important
-/[a-z0-9]{14}.cloudfront.net/
 ||s0.2mdn.net
 
 ! === ALLOWLISTS (preserve live / session continuity) ===
