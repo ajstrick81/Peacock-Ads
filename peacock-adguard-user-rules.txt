@@ -1,4 +1,4 @@
-! ----- PEACOCK ULTIMATE AGGRESSIVE BLOCK LIST v2.5 (Stable, but possibly increased startup latency) -----
+! ----- PEACOCK ULTIMATE AGGRESSIVE BLOCK LIST v2.5 (Stable) -----
 ! Purpose: Aggressively block Peacock ad shards and ad tech while preserving VOD and live playback.
 ! Use: Import into AdGuard -> Filters -> User rules (or paste into User rules).
 
@@ -35,11 +35,6 @@
 ||s0.2mdn.net
 
 ! === ALLOWLISTS (preserve live / session continuity) ===
-! Allow Adobe DTM loader (required for some TV clients' runtime bootstrap)
 @@||assets.adobedtm.com^
-! Allow ingest/session heartbeat used by live streams
 @@||ingest.webcol.sdp.peacocktv.com^
-! Allow OVP / player backend endpoints
-@@||play.ovp.peacocktv.com^
-@@||ovp.peacocktv.com^
-@@||play.clients.peacocktv.com^
+
