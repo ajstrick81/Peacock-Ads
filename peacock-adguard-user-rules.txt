@@ -5,10 +5,16 @@
 ! === PRIMARY BLOCK ===
 ! Block Peacock CDN shards used for content/ad segments (VOD ad shards)
 # Anchored regex — matches hosts like g002-vod-us-cmaf-prd-ak.cdn.peacocktv.com
-# Credit to Reddit user: lurking-in-the-bg for updating the rules
-/^(g\d{3})-(vod|sf|sle)-us-cmaf-prd-(cf|cc|sf|ph|dc|at|ak).cdn.peacocktv.com
-/^(g\d{3})-vod-us-cmaf-prd-fy\.cdn\.peacocktv\.com
-https://g*-sf-us-cmaf-prd-ak-a*.cdn.peacocktv.com
+/g\d{1,4}-(vod|sf|sle)-us-cmaf-prd-(cf|cc|sf|ph|dc|at|ak)(-[a-z0-9-]+)?.cdn.peacocktv.com
+||g*-vod-us-cmaf-prd-ak-a*.cdn.peacocktv.com
+||g*-vod-us-cmaf-prd-ns.prd.pck.netskrt.net
+||g*-vod-us-cmaf-prd-mc.cdn.peacocktv.com
+||g*-sf-us-cmaf-prd-ak-a*.cdn.peacocktv.com
+||g*-vod-us-cmaf-prd-fy.cdn.peacocktv.com
+||g*-vod-us-cmaf-prd-cc.cdn.peacocktv.com
+/^g\d{1,4}-(vod|sf|sle)-us-cmaf-prd-[a-z]{2,3}-a\d+\.cdn\.peacocktv\.com$/
+/(g001|g003|g005)-(vod|sf|sle)-us-cmaf-prd-(cf|cc|sf|ph|dc|at|fy|ak(-[a-z0-9]+)?).cdn.peacocktv.com/
+
 
 ! === SECONDARY BLOCK ===
 ! Block NETSKRT ad-segment CDN (most variants)
