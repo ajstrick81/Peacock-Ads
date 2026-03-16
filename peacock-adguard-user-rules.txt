@@ -11,6 +11,8 @@
 ||g*-vod-us-cmaf-prd-cc.cdn.peacocktv.com
 /^g\d{1,4}-(vod|sf|sle)-us-cmaf-prd-[a-z]{2,3}-a\d+\.cdn\.peacocktv\.com$/
 /(g001|g003|g005)-(vod|sf|sle)-us-cmaf-prd-(cf|cc|sf|ph|dc|at||(-[a-z0-9]+)?).cdn.peacocktv.com/
+! AWS MediaTailor — testing to cover live content SSAI
+/^.+\.mediatailor\.[^.]+\.amazonaws\.com$/$dnsrewrite=0.0.0.0
 
 
 ! === SECONDARY BLOCK ===
