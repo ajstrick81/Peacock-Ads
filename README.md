@@ -2,6 +2,14 @@ How does this work? (I think) The syntax wildcard and regex-based domain blocks 
 
 This repo is updated as often as I can get to it. It's a game of cat and mouse with their servers, but I'm trying my best to minimize and block as many ads as possible. Appreciate all of your testing and feedback!
 
+**Important Update to the Repo: Please know that adding this will disable Game Replays and Sports Highlights. It's included because it removes ads from Movies**
+
+! === USE With Caution - Blocks Sports Highlights and Game Replays, but Blocks Ads with Movies ===
+||g005-sf-us-cmaf-prd-fy.cdn.peacocktv.com
+||g006-vod-us-cmaf-prd-fy.cdn.peacocktv.com
+||g006-vod-us-cmaf-prd-ns.prd.pck.netskrt.net
+||g006-vod-us-cmaf-prd-mc.cdn.peacocktv.com
+
 ***Also, check out Reddit user lurking-in-the-bg's Peacock ruleset for a much more condensed and effective version. They've been a huge help with testing and making this project a success!***
 
 https://github.com/lit-bg/Peacock/blob/main/filterlist.txt
