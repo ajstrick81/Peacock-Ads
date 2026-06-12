@@ -1,25 +1,36 @@
-! ----- PEACOCK ULTIMATE AGGRESSIVE BLOCK LIST v2.7 (Stable) ----- Updated 5-12-26
+! ----- PEACOCK ULTIMATE AGGRESSIVE BLOCK LIST v2.7 (Stable) ----- Updated 6-12-26
 ! Purpose: Aggressively block Peacock ad shards and ad tech while preserving VOD and live playback.
 ! Use: Import into AdGuard -> Filters -> User rules (or paste into User rules).
 
+**! === ALLOWLIST ===**
+@@||assets.adobedtm.com^
+@@||ingest.webcol.sdp.peacocktv.com^
+
+**! === PEACOCK DOMAINS ===**
 ||vac.peacocktv.com^$important
 ||sas.peacocktv.com^$important
 ||*.vac.peacocktv.com^$important
-! === MEDIATAILOR SSAI — fixed from v2.6 typo ===
+
+**! === MEDIATAILOR SSAI — fixed from v2.6 typo ===**
 /^.+\.mediatailor\.[^.]+\.amazonaws\.com$/$dnsrewrite=0.0.0.0,important
-! === FREEWHEEL CSAI ===
+
+**! === FREEWHEEL CSAI ===**
 ||*.fwmrm.net^$important
 ||video-ads-module.ad-tech.nbcuni.com^$important
-! === CDN AD SHARDS ===
+
+**! === CDN AD SHARDS ===**
 /^g\d{1,4}-(vod|sf|sle)-us-cmaf-prd-(cf|cc|ak|ph|dc|at)(-[a-z0-9]+)?\.cdn\.peacocktv\.com$/$dnsrewrite=0.0.0.0,important
-! === NETSKRT — block all except -ns ===
+
+**! === NETSKRT — block all except -ns ===**
 /^g\d{1,4}-[a-z0-9]+-us-cmaf-prd-(?!ns)[a-z0-9-]+\.prd\.pck\.netskrt\.net$/$dnsrewrite=0.0.0.0
-! === USE With Caution - Blocks Sports Highlights and Game Replays, but Blocks Ads with Movies ===
+
+**! === USE With Caution - Blocks Sports Highlights and Game Replays, but Blocks Ads for Movies/TV Shows and Live Content ===**
 ||g005-sf-us-cmaf-prd-fy.cdn.peacocktv.com
 ||g006-vod-us-cmaf-prd-fy.cdn.peacocktv.com
 ||g006-vod-us-cmaf-prd-ns.prd.pck.netskrt.net
 ||g006-vod-us-cmaf-prd-mc.cdn.peacocktv.com
-! === TELEMETRY ===
+
+**! === TELEMETRY ===**
 ||identity.mparticle.com^$important
 ||census-app.scorecardresearch.com^$important
 ||sb.scorecardresearch.com^$important
@@ -27,6 +38,3 @@
 ||nbcstreaming.hb-api.omtrdc.net^$important
 ||s0.2mdn.net^
 ||ad.doubleclick.net
-! === ALLOWLIST ===
-@@||assets.adobedtm.com^
-@@||ingest.webcol.sdp.peacocktv.com^
