@@ -25,10 +25,11 @@
 /^g\d{1,4}-[a-z0-9]+-us-cmaf-prd-(?!ns)[a-z0-9-]+\.prd\.pck\.netskrt\.net$/$dnsrewrite=0.0.0.0
 
 **! === USE With Caution - Blocks Sports Highlights and Game Replays, but Blocks Ads for Movies/TV Shows and Live Content ===**
-||g005-sf-us-cmaf-prd-fy.cdn.peacocktv.com
-||g006-vod-us-cmaf-prd-fy.cdn.peacocktv.com
-||g006-vod-us-cmaf-prd-ns.prd.pck.netskrt.net
-||g006-vod-us-cmaf-prd-mc.cdn.peacocktv.com
+! Removed due playback errors
+!||g005-sf-us-cmaf-prd-fy.cdn.peacocktv.com
+!||g006-vod-us-cmaf-prd-fy.cdn.peacocktv.com
+!||g006-vod-us-cmaf-prd-ns.prd.pck.netskrt.net
+!||g006-vod-us-cmaf-prd-mc.cdn.peacocktv.com
 
 **! === TELEMETRY ===**
 ||identity.mparticle.com^$important
